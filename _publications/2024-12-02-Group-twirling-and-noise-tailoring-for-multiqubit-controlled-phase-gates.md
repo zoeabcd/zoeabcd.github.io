@@ -1,7 +1,7 @@
 ---
 title: "Group twirling and noise tailoring for multiqubit controlled phase gates"
 collection: publications
-category: Conferences
+category: conferences
 permalink: /publication/2024-12-02-Group-twirling-and-noise-tailoring-for-multiqubit-controlled-phase-gates
 date: 2024-12-02
 venue: 'Physics Review Research'
