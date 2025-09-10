@@ -24,7 +24,7 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "my_pic.jpg"
-  name             : "Ziyi(Zoe) Xie"
+  name             : "Ziyi Xie/ Zoe Xie/ 谢子怡"
   pronouns         : # example: "she/her"
   bio              : "PhD Student in Tsinghua University, working on quantum computing and quantum cryptography."
   location         : "Beijing, China"
@@ -88,7 +88,7 @@ publication_category:
   manuscripts:
     title: 'Manuscripts'
   conferences:
-    title: 'Conference Papers'
+    title: 'Conferences'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
