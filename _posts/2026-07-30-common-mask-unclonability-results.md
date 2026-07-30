@@ -20,7 +20,7 @@ encryption (UE).
 
 Fix any finite-dimensional UE token ensemble. Split one token between Bob and
 Charlie before revealing the key \\(k\\) and a uniformly random common mask
-\\(r\in\{0,1\}^n\\). Let \\(p_D\\) be the probability that both parties correctly
+\\(r\in\lbrace 0,1\rbrace^n\\). Let \\(p_D\\) be the probability that both parties correctly
 output \\(\langle r,m\rangle\\).
 
 **Theorem.** If \\(p_D\geq1/2\\), there exist local one-copy measurements, with
@@ -45,7 +45,7 @@ nonuniform reduction.
 
 ## 2. An exponential bound for the two-basis UE parity game
 
-Sample \\(x,\theta,r\\) independently and uniformly from \\(\{0,1\}^n\\). Split
+Sample \\(x,\theta,r\\) independently and uniformly from \\(\lbrace 0,1\rbrace^n\\). Split
 one BB84 state
 
 \\[
