@@ -2,7 +2,7 @@
 title: "Two Results on Common-Mask Unclonability"
 date: 2026-07-30 17:18:04 +0800
 permalink: /blog/common-mask-unclonability-results/
-excerpt: "I prove a Goldreich-Levin search-to-decision theorem for arbitrarily entangled split states and an exponential upper bound for the uniform-mask I/X/Z parity game."
+excerpt: "This note records a Goldreich-Levin search-to-decision result for arbitrarily entangled split states and an exponential upper bound for the uniform-mask I/X/Z parity game."
 tags:
   - quantum cryptography
   - unclonable cryptography
@@ -13,8 +13,17 @@ share: false
 related: false
 ---
 
-I have proved two results about common-mask challenges in unclonable
-encryption (UE).
+This note records two results about common-mask challenges in unclonable
+encryption (UE). I believe both statements below are correct.
+
+<div class="notice--warning" markdown="1">
+**AI usage note.**
+
+Most of the proof strategy was suggested by GPT. The resulting approach has
+similarities to the operator framework in Prabhanjan Ananth and Amit Sahai's
+[*Unconditional Unclonable Encryption*](https://arxiv.org/abs/2607.21551).
+I believe the two stated results are correct.
+</div>
 
 ## 1. A Goldreich-Levin theorem for UE
 
