@@ -1,0 +1,43 @@
+PUBLIC CLAIM STATEMENT - VERSION 1
+
+Canonical blog URL:
+https://zoeabcd.github.io/blog/common-mask-unclonability-results/
+
+CLAIM 1 - COMMON-MASK GOLDREICH-LEVIN
+
+For any finite-dimensional UE token ensemble and any decision strategy with
+joint success p_D >= 1/2, there exist local one-copy recovery measurements,
+using no post-split communication, whose joint search success satisfies
+
+    p_S >= (2 p_D - 1)^4.
+
+In particular, p_D = 1/2 + epsilon implies p_S >= 16 epsilon^4. The post-split
+state may be arbitrarily entangled. The reduction is information-theoretic and
+may be inefficient and nonuniform.
+
+CLAIM 2 - UNIFORM-MASK I/X/Z PARITY GAME
+
+Let omega_n be the supremum, over all finite-dimensional splitting channels
+and local decoders, of the joint success probability in the following game:
+x, theta, and r are independent and uniform in {0,1}^n; one copy of the BB84
+state |x_theta> is split before the common question (theta,r) is revealed; and
+both recipients, without communicating, must output <r,x> mod 2.
+
+For every n >= 1,
+
+    omega_n <= 1/2 [1 + (sqrt(3)/2)^n].
+
+An explicit product Breidbart strategy gives
+
+    omega_n >= 1/2 + 1/2 [(1 + 1/sqrt(2))/2]^n.
+
+These bounds do not establish the exact value of omega_n, tightness, a product
+theorem, or a bound for infinite-dimensional or commuting-operator strategies.
+
+SOURCE MANUSCRIPT SHA-256 DIGESTS
+
+IXZ_UE.pdf:
+10f7a0ab94887f4658304cc5aa03d8f243bf51bd08f8f260455b86aac42991cb
+
+search_to_decision.pdf:
+85e23400ad4629f1c171e7e4478cfa0a1a85094f5896a15d19a42b962b8980a7
