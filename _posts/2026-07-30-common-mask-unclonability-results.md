@@ -19,25 +19,25 @@ encryption (UE).
 ## 1. A Goldreich-Levin theorem for UE
 
 Fix any finite-dimensional UE token ensemble. Split one token between Bob and
-Charlie before revealing the key \(k\) and a uniformly random common mask
-\(r\in\{0,1\}^n\). Let \(p_D\) be the probability that both parties correctly
-output \(\langle r,m\rangle\).
+Charlie before revealing the key \\(k\\) and a uniformly random common mask
+\\(r\in\{0,1\}^n\\). Let \\(p_D\\) be the probability that both parties correctly
+output \\(\langle r,m\rangle\\).
 
-**Theorem.** If \(p_D\geq1/2\), there exist local one-copy measurements, with
-no post-split communication, such that both parties recover \(m\) with
+**Theorem.** If \\(p_D\geq1/2\\), there exist local one-copy measurements, with
+no post-split communication, such that both parties recover \\(m\\) with
 probability
 
-\[
+\\[
 p_S\geq(2p_D-1)^4.
-\]
+\\]
 
 Equivalently,
 
-\[
+\\[
 p_D=\frac12+\varepsilon
 \quad\Longrightarrow\quad
 p_S\geq16\varepsilon^4.
-\]
+\\]
 
 This holds for arbitrarily entangled post-split states and does not require
 commuting decoders. It is an information-theoretic, possibly inefficient and
@@ -45,44 +45,44 @@ nonuniform reduction.
 
 ## 2. An exponential bound for the two-basis UE parity game
 
-Sample \(x,\theta,r\) independently and uniformly from \(\{0,1\}^n\). Split
+Sample \\(x,\theta,r\\) independently and uniformly from \\(\{0,1\}^n\\). Split
 one BB84 state
 
-\[
+\\[
 \lvert x_\theta\rangle
 =\bigotimes_{j=1}^n H^{\theta_j}\lvert x_j\rangle
-\]
+\\]
 
-before revealing the common question \((\theta,r)\). Both recipients must
-output \(\langle r,x\rangle\) without communicating. Let \(\omega_n\) be the
+before revealing the common question \\((\theta,r)\\). Both recipients must
+output \\(\langle r,x\rangle\\) without communicating. Let \\(\omega_n\\) be the
 supremum of their joint success probability over all finite-dimensional
 splitting channels and local decoders.
 
-**Theorem.** For every \(n\geq1\),
+**Theorem.** For every \\(n\geq1\\),
 
-\[
+\\[
 \omega_n\leq
 \frac12\left[1+\left(\frac{\sqrt3}{2}\right)^n\right].
-\]
+\\]
 
 Thus
 
-\[
+\\[
 \omega_n-\frac12
 \leq\frac12\left(\frac{\sqrt3}{2}\right)^n
 =2^{-\Omega(n)}.
-\]
+\\]
 
 An explicit product Breidbart strategy gives the lower bound
 
-\[
+\\[
 \omega_n\geq
 \frac12+
 \frac12\left(\frac{1+1/\sqrt2}{2}\right)^n.
-\]
+\\]
 
 The bounds are not equal. The proof does not establish the exact value,
-tightness, a product theorem \(\omega_n=\omega_1^n\), or a bound for
+tightness, a product theorem \\(\omega_n=\omega_1^n\\), or a bound for
 infinite-dimensional or commuting-operator strategies.
 
 
