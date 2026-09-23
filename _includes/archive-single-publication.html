@@ -1,0 +1,10 @@
+{% include base_path %}
+<div class="{{ include.type | default: 'list' }}__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/ScholarlyArticle">
+    <h2 class="archive__item-title" itemprop="headline">
+      <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title | escape }}</a>
+    </h2>
+    {% include publication-meta.html publication=post %}
+    {% include publication-links.html publication=post %}
+  </article>
+</div>

@@ -25,15 +25,24 @@
 ---
 title: "论文标题"
 collection: publications
-category: manuscripts
+category: preprints
 permalink: /publication/2026-09-22-short-title
 date: 2026-09-22
-paperurl: 'https://example.com/paper.pdf'
-coauthor: '合作者姓名'
+venue: 'arXiv 预印本'
+authors:
+  - 合作者姓名
+  - Ziyi Xie
+links:
+  - label: PDF
+    url: https://example.com/paper.pdf
+  - label: arXiv
+    url: https://arxiv.org/abs/论文编号
 ---
 ```
 
-把示例内容替换成论文信息。`category` 使用 `_config.yml` 已定义的 `underreview`、`preprints`、`manuscripts` 或 `conferences`；有发表刊物或会议时可添加 `venue`。论文列表页会自动收录。
+把示例内容替换成论文信息。`category` 只使用 `preprints`（预印本与技术报告）或 `published`（正式发表）。`authors` 按论文的完整作者顺序填写，`Ziyi Xie` 会自动加粗；`venue` 填会议、期刊或预印本编号。`links` 按需要添加 PDF、arXiv、Publisher 或 ECCC 链接。
+
+论文列表按分组、日期倒序自动收录。预印本正式发表后更新同一个文件的 `category`、`date`、`venue` 和链接，保留原有 `permalink`，无需为不同版本重复添加条目。
 
 在 `_posts/` 新建 `YYYY-MM-DD-short-title.md`，例如：
 
@@ -49,6 +58,26 @@ tags:
 ```
 
 在 front matter 结束的 `---` 后写正文，博客归档会自动收录。附件放入 `files/`，可用 `[附件说明](/files/文件名.pdf)` 链接。现有博客所引用的证明文件和时间戳文件需一并保留。
+
+## 新增助教经历
+
+在 `_teaching/` 新建文件，例如 `2026-spring-itcs.md`：
+
+```yaml
+---
+title: "Introduction to Theoretical Computer Science"
+collection: teaching
+permalink: /teaching/2026-spring-itcs/
+semester: "Spring 2026"
+instructor: "Zhengfeng Ji"
+venue: "Tsinghua University, DCST"
+role: "Teaching Assistant"
+date: 2026-01-01 # 仅用于学期排序，不表示具体开课日期。
+course_url: https://itcs.finite-dimensional.space/
+---
+```
+
+列表显示学期、教师与助教身份，按学期倒序排列；同学期按课程标题降序排列。没有课程网站时省略 `course_url`，标题会显示为普通文本。外部课程网址放在 `course_url`，`permalink` 只填写站内路径。
 
 ## 本地预览与检查
 
@@ -66,7 +95,7 @@ bundle exec jekyll serve --livereload --host localhost
 
 也保留了 Docker 与 VS Code Dev Container：安装 Docker 后可运行 `docker compose up --build`，或在 VS Code 中选择 **Dev Containers: Reopen in Container**，同样访问端口 4000。
 
-日常改文字不需要 npm。只有修改 `assets/js/_main.js` 或导航插件等 JavaScript 源码时，才运行 `npm install` 和 `npm run build:js` 更新 `assets/js/main.min.js`。`_layouts/`、`_includes/`、`_sass/` 管理布局、共用部件和样式；`markdown_generator/` 是可选的批量生成工具，平时直接编辑 Markdown 即可。
+日常改文字不需要 npm。只有修改 `assets/js/_main.js` 或导航插件等 JavaScript 源码时，才运行 `npm install` 和 `npm run build:js` 更新 `assets/js/main.min.js`。`_layouts/`、`_includes/`、`_sass/` 管理布局、共用部件和样式；`markdown_generator/` 是保留的旧版批量生成工具，输出需按本文示例调整字段，平时直接编辑 Markdown 即可。
 
 ## 发布
 

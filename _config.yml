@@ -23,14 +23,10 @@ author:
 
 # 论文分类：论文 front matter 中的 category 对应下面的键。
 publication_category:
-  underreview:
-    title: 'Under Review'
   preprints:
     title: 'Preprints'
-  manuscripts:
-    title: 'Manuscripts'
-  conferences:
-    title: 'Conference Paper'
+  published:
+    title: 'Published Papers'
 
 # 页面与 RSS
 teaser                   :

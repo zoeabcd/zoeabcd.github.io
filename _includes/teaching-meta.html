@@ -1,0 +1,5 @@
+{% assign teaching = include.teaching %}
+<p>
+  {{ teaching.role | escape }} &middot; {{ teaching.semester | escape }}<br>
+  Instructor: {{ teaching.instructor | escape }}{% if teaching.venue %} &middot; <i>{{ teaching.venue | escape }}</i>{% endif %}
+</p>

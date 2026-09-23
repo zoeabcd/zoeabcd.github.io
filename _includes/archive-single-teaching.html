@@ -1,0 +1,12 @@
+<div class="{{ include.type | default: 'list' }}__item">
+  <article class="archive__item">
+    <h2 class="archive__item-title">
+      {% if post.course_url %}
+        <a href="{{ post.course_url | escape }}">{{ post.title | escape }}</a>
+      {% else %}
+        {{ post.title | escape }}
+      {% endif %}
+    </h2>
+    {% include teaching-meta.html teaching=post %}
+  </article>
+</div>
