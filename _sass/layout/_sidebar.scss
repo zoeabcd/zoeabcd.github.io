@@ -84,23 +84,38 @@
   display: table-cell;
   vertical-align: top;
   width: 36px;
-  // set width only, for non-square avatars
-  // height: 36px;
 
   @include breakpoint($large) {
     display: block;
-    width: auto;
-    height: auto;
+    width: 175px;
+    max-width: 100%;
   }
 
-  img {
-    max-width: 175px;
+  .author__avatar-frame {
+    display: block;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1279 / 1706;
+    overflow: hidden;
     border-radius: 50%;
 
     @include breakpoint($large) {
-      padding: 5px;
       border: 1px solid var(--global-border-color);
     }
+  }
+
+  // Keep the original portrait proportions and oval shape, with only 12% zoom.
+  // Preserve my_pic.jpg unchanged; the framing is applied only on the page.
+  .author__avatar-frame img {
+    position: absolute;
+    width: 112%;
+    max-width: none;
+    height: auto;
+    left: -6%;
+    top: -6%;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
   }
 }
 
